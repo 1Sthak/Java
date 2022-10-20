@@ -7,38 +7,38 @@ public class BankWhile {
 		int bakiye = 1000, inp, yatirma, cekme;
 		String kul_adi, parola, data_kul_adi, data_parola;
 		data_kul_adi = "Taha Konyar";
-		data_parola = "123456";
+		data_parola = "0124";
 		
-		System.out.println("Kullanýcý adý giriniz: ");
+		System.out.println("Kullanï¿½cï¿½ adï¿½ giriniz: ");
 		kul_adi = giris.nextLine();
 		System.out.println("Parola giriniz");
 		parola = giris.nextLine();
 		
 		if(data_kul_adi.equals(kul_adi) && data_parola.equals(parola)) {
-			System.out.println("Hoþgeldin " + kul_adi);
-			System.out.println("Güncel Bakiyeniz: " + bakiye + " TL");
+			System.out.println("Hoï¿½geldin " + kul_adi);
+			System.out.println("Gï¿½ncel Bakiyeniz: " + bakiye + " TL");
 		}
 		else {
-			System.out.println("Sizi Tanýyamadýk " + kul_adi);
+			System.out.println("Sizi Tanï¿½yamadï¿½k " + kul_adi);
 		}
 		while (bakiye > 0) {
 			System.out.println();
-			System.out.println("1-) Para Yatýr");
-			System.out.println("2-) Para Çek");
+			System.out.println("1-) Para Yatï¿½r");
+			System.out.println("2-) Para ï¿½ek");
 			System.out.println("3-) Bakiye Sorgula");
-			System.out.println("4-) Çýkýþ Yap");
+			System.out.println("4-) ï¿½ï¿½kï¿½ï¿½ Yap");
 			System.out.println();
-			System.out.println("Yapmak Ýstediðiniz Ýþlemi Seçiniz...");
+			System.out.println("Yapmak ï¿½stediï¿½iniz ï¿½ï¿½lemi Seï¿½iniz...");
 			inp = giris.nextInt();
 			
 			if(inp == 1) {
-				System.out.println("Yatýrmak Ýstediðiniz Tutarý Giriniz: ");
+				System.out.println("Yatï¿½rmak ï¿½stediï¿½iniz Tutarï¿½ Giriniz: ");
 				yatirma = giris.nextInt();
 				bakiye += yatirma;
 				System.out.println("Bakiyeniz: " + bakiye);
 			}
 			else if(inp == 2) {
-				System.out.println("Çekmek Ýstediðiniz Tutarý Giriniz: ");
+				System.out.println("ï¿½ekmek ï¿½stediï¿½iniz Tutarï¿½ Giriniz: ");
 				cekme = giris.nextInt();
 				if(cekme > bakiye) {
 					System.out.println("Yetersiz Bakiye...");
@@ -51,11 +51,11 @@ public class BankWhile {
 				System.out.println("Bakiyeniz: " + bakiye);
 			}
 			else if(inp == 4) {
-				System.out.println("Çýkýþ Yapýlýyor...");
+				System.out.println("ï¿½ï¿½kï¿½ï¿½ Yapï¿½lï¿½yor...");
 				break;
 			}
 			else {
-				System.out.println("Yanlýþ Giriþ Try Again");
+				System.out.println("Yanlï¿½ï¿½ Giriï¿½ Try Again");
 			}
 		}
 	}
